@@ -9,7 +9,7 @@ from grapheneapi import GrapheneAPI
 
 # RPC wallet details
 rpc_host		= "localhost" 	#Hostname or IP address of the RPC wallet you are connecting too
-rpc_port		= 8092		#Port that RPC connection allows inbound communication too
+rpc_port		= 8092		#Port that CLI wallet allows RPC connection too; run cli with -r 127.0.0.1:8092
 rpc_username		= ""		#RPC username, default username in Graphene config is blank / ""
 rpc_password		= ""		#RPC password, default password in Graphene config is blank / ""
 

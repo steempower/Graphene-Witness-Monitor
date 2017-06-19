@@ -3,6 +3,7 @@ Script to monitor the health of Graphene Witnesses and Seed node
 
 Thanks to @RoelandP and @Xeroc for their prior work in this tool and supporting libraries.
 
+
 ##  Preface
 This script is in ALPHA and has only been tested with the Peerplays network although should work with other Graphene based chains. This script is in testing and i highly recommend you do not activate the HotSwitch function until it has been fully tested.
 
@@ -16,8 +17,14 @@ If you cannot help yourself and activate the HotSwitch function, it should only 
 * Copy witnesshealth.py to location on disk (script requires access to GrapheneAPI)
 
 ## Start Monitor
-The monitor connects to a RPC wallet interface; for monitoring the wallet can be locked. If you use the HotSwitch feature you will need to have you wallet unlocked to be able to sign and broadcase the witness_update transaction
+The monitor connects to the CLI wallet RPC interface; for monitoring the wallet can be locked. If you use the HotSwitch feature you will need to have you wallet unlocked to be able to sign and broadcase the witness_update transaction
 
+### Start Cli Wallet
+```
+./cli_wallet -r 127.0.0.1:8092
+```
+
+### Start monitor in a new terminal
 ```
 python3 witnesshealth.py  
 ```
