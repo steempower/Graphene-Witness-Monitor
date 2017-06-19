@@ -16,6 +16,9 @@ If you cannot help yourself and activate the HotSwitch function, it should only 
 * Install [Python-Graphene](https://github.com/xeroc/python-graphenelib)
 * Copy witnesshealth.py to location on disk (script requires access to GrapheneAPI)
 
+## Configuration
+You will need to modify the witnesshealth.py script to suit your enviroment. Comments within the code.
+
 ## Start Monitor
 The monitor connects to the CLI wallet RPC interface; for monitoring the wallet can be locked. If you use the HotSwitch feature you will need to have you wallet unlocked to be able to sign and broadcase the witness_update transaction
 
