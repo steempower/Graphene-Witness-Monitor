@@ -61,7 +61,7 @@ def check_seednode():
     tn = telnetlib.Telnet(seed_host, seed_port,seed_timeout_check)
     print(tn.read_all())
   except Exception as e:
-    tel_msg = "Your public seednode for bitshares is not responding!\n\nat *"+seed_host+"*.\n\n_"+str(e)+"_"
+    tel_msg = "Your public seednode is not responding!\n\nat *"+seed_host+"*.\n\n_"+str(e)+"_"
     alert_witness(tel_msg)
 
 
